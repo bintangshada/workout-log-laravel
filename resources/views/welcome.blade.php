@@ -7,10 +7,12 @@
 
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700,800&display=swap" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="antialiased font-sans text-gray-900 bg-gray-50 dark:bg-gray-900 selection:bg-blue-500 selection:text-white">
+    <body class="antialiased font-sans text-gray-900 bg-gray-50 dark:bg-gray-900 selection:bg-blue-500 selection:text-white overflow-x-hidden">
         
         <nav x-data="{ scrolled: false }" 
              @scroll.window="scrolled = (window.pageYOffset > 20)"
@@ -53,21 +55,21 @@
             </div>
 
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-                <div class="inline-flex items-center px-4 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-sm font-medium mb-8 backdrop-blur-sm animate-fade-in-up">
+                <div class="inline-flex items-center px-4 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-sm font-medium mb-8 backdrop-blur-sm" data-aos="fade-down" data-aos-delay="100">
                     <span class="flex h-2 w-2 rounded-full bg-blue-500 mr-2"></span>
                     The #1 Workout Tracker for Athletes
                 </div>
                 
-                <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                <h1 data-aos="fade-up" data-aos-delay="200" class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
                     Track Progress. <br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Crush Goals.</span>
                 </h1>
                 
-                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-300 mb-10 leading-relaxed">
+                <p data-aos="fade-up" data-aos-delay="300" class="mt-4 max-w-2xl mx-auto text-xl text-gray-300 mb-10 leading-relaxed">
                     Stop guessing your lifts. Log every set, analyze your volume, and visualize your gains with the most intuitive fitness tracker built for serious lifters.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
                     <a href="{{ route('register') }}" class="px-8 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg shadow-xl shadow-blue-600/20 transition-all transform hover:scale-105">
                         Start Tracking for Free
                     </a>
@@ -77,20 +79,20 @@
                     </a>
                 </div>
 
-                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-8 max-w-4xl mx-auto">
-                    <div>
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-8 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="500">
+                    <div data-aos="zoom-in" data-aos-delay="600">
                         <div class="text-3xl font-bold text-white">500+</div>
                         <div class="text-sm text-gray-400">Exercises</div>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-delay="700">
                         <div class="text-3xl font-bold text-white">Unlimited</div>
                         <div class="text-sm text-gray-400">Workout Logs</div>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-delay="800">
                         <div class="text-3xl font-bold text-white">100%</div>
                         <div class="text-sm text-gray-400">Free to Use</div>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-delay="900">
                         <div class="text-3xl font-bold text-white">24/7</div>
                         <div class="text-sm text-gray-400">Accessibility</div>
                     </div>
@@ -100,7 +102,7 @@
 
         <section id="features" class="py-24 bg-gray-900 relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
+                <div class="text-center mb-16" data-aos="fade-up">
                     <h2 class="text-base text-blue-500 font-semibold tracking-wide uppercase">Why FitTrack?</h2>
                     <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
                         Everything you need to get stronger
@@ -111,7 +113,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-blue-500/50 transition-colors group">
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-blue-500/50 transition-colors group" data-aos="fade-right" data-aos-delay="100">
                         <div class="w-14 h-14 bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
                         </div>
@@ -121,7 +123,7 @@
                         </p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500/50 transition-colors group">
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500/50 transition-colors group" data-aos="fade-up" data-aos-delay="200">
                         <div class="w-14 h-14 bg-purple-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
                         </div>
@@ -131,7 +133,7 @@
                         </p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500/50 transition-colors group">
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500/50 transition-colors group" data-aos="fade-right" data-aos-delay="300">
                         <div class="w-14 h-14 bg-green-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                         </div>
@@ -151,20 +153,20 @@
                 <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
             </div>
             
-            <div class="relative max-w-4xl mx-auto px-4 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to transform your physique?</h2>
-                <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+            <div class="relative max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" data-aos="fade-up" data-aos-delay="100">Ready to transform your physique?</h2>
+                <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                     Join thousands of users who are building better habits and stronger bodies with FitTrack.
                 </p>
-                <a href="{{ route('register') }}" class="inline-block bg-white text-blue-600 font-bold text-lg px-10 py-4 rounded-xl shadow-xl hover:bg-gray-50 transition-colors transform hover:-translate-y-1">
+                <a href="{{ route('register') }}" class="inline-block bg-white text-blue-600 font-bold text-lg px-10 py-4 rounded-xl shadow-xl hover:bg-gray-50 transition-colors transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="300">
                     Create Free Account
                 </a>
-                <p class="mt-4 text-sm text-blue-200 opacity-80">No credit card required</p>
+                <p class="mt-4 text-sm text-blue-200 opacity-80" data-aos="fade-up" data-aos-delay="400">No credit card required</p>
             </div>
         </section>
 
         <footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center" data-aos="fade-up">
                 <div class="flex items-center gap-2 mb-4">
                     <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -181,5 +183,13 @@
         </footer>
 
         <script src="//unpkg.com/alpinejs" defer></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                offset: 100
+            });
+        </script>
     </body>
 </html>
